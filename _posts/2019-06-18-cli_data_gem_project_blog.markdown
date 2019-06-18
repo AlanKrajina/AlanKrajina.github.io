@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "CLI Data Gem Project Blog"
-date:       2019-06-18 16:51:06 +0000
+date:       2019-06-18 12:51:07 -0400
 permalink:  cli_data_gem_project_blog
 ---
 
@@ -47,7 +47,7 @@ After expanding on that idea and everything that I could output to the terminal 
 Referring back to building a house, if the mockup *CLI Class* was a blueprint on how the house would look at the end, to start building a house we need the materials first. To get materials we need we will scrape our URL and save all that data somewhere to use later.
 This is where our tools come in handy, having so much material in front of us it is time to be…
 
-![bob](https://ibb.co/1mzwM9x)
+![bob](https://myhero.com/images/guest/g199393/hero45760/g199393_u51345_Bob_The_Builder.JPG)
 
 Yaaay!! :D
 
@@ -100,7 +100,15 @@ This is why that line of code in our previous class is important.
 **BestOnlineCodingBootcamps::Bootcamps.new(name,rating,subjects,url)** calls ‘**initialize**’ method from *BestOnlineCodingBootcamps::Bootcamps* Class, creates a new Object (bootcamp) using method ‘***new***’, takes the newly created variables that we scraped and uses them as arguments upon initialization.
 Meaning now we have a new bootcamp with its info (name,rating,subjects,url) saved to an array.
 
-![all](https://ibb.co/hFsh4VW)
+```
+[1] pry(#<BestOnlineCodingBootcamps::Bootcamps>)> @@all
+=> [#<BestOnlineCodingBootcamps::Bootcamps:0x000000000243ad08
+  @name="App Academy",
+  @rating="4.7/5",
+  @subjects=
+   "JavaScript, Ruby, Rails, React.js, Redux, CSS, HTML, SQL, Advanced Algorithims",
+  @url="/bootcamps/app-academy">]
+```
 
 To sum up:
 *  we have a basic idea how our CLI class could look and that its responsibility
