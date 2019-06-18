@@ -49,7 +49,7 @@ This is where our tools come in handy, having so much material in front of us it
 
 ![bob](https://myhero.com/images/guest/g199393/hero45760/g199393_u51345_Bob_The_Builder.JPG)
 
-Yaaay!! :D
+Hurrah!! :D
 
 Let’s take a look at the *BestOnlineCodingBootcamps:Scraper Class* and how we scrape the first level using enumerator ‘each’. 
 
@@ -74,9 +74,12 @@ end
 ```
 
 Here we have a Class method called *scrape_index_page*.
-This method uses HTML parser ‘*nokogiri*’ and a HTTP wrapper ‘*open-uri*’ to get our website HTML and save tha data to a variable ‘**doc**’.
-Then we use the ‘each’ enumerator to iterate through doc.css(“li div.ranking-item”), that is our container with all bootcamps, and then we assign a specific camp.css to new variables, variables that we will use in our  *BestOnlineCodingBootcamps:Bootcamps* class. 
-Very important part is the line of code with **BestOnlineCodingBootcamps::Bootcamps.new(name,rating,subjects,url)**. Lets take a look first at the Bootcamps Class.
+This method uses HTML parser ‘*nokogiri*’ and a HTTP wrapper ‘*open-uri*’ to get our website HTML and save that data to a variable ‘**doc**’.
+Then we use the ‘each’ enumerator to iterate through doc.css(“li div.ranking-item”), that is our container with all bootcamps, and then we assign a specific camp.css().text to new variables, variables that we will use in our  *BestOnlineCodingBootcamps:Bootcamps* class. 
+Remember this very important line of code:
+**BestOnlineCodingBootcamps::Bootcamps.new(name,rating,subjects,url)**
+
+Lets take a look first at the Bootcamps Class.
 
 ```
 class BestOnlineCodingBootcamps::Bootcamps
@@ -94,11 +97,11 @@ class BestOnlineCodingBootcamps::Bootcamps
 end
 ```
 In this *BestOnlineCodingBootcamps:Bootcamps* Class there is a method called ‘**initialize**’ that takes arguments and assigns them to instance variables. During initialization this method saves newly created Objects using ‘*self*’ and saves them to an empty class variable **@@all**.
-This is why that line of code in our previous class is important.
+Now this is why that line of code in our previous class is important.
 
 
 **BestOnlineCodingBootcamps::Bootcamps.new(name,rating,subjects,url)** calls ‘**initialize**’ method from *BestOnlineCodingBootcamps::Bootcamps* Class, creates a new Object (bootcamp) using method ‘***new***’, takes the newly created variables that we scraped and uses them as arguments upon initialization.
-Meaning now we have a new bootcamp with its info (name,rating,subjects,url) saved to an array.
+Meaning now we have a new bootcamp with it's info (name,rating,subjects,url) saved to an array.
 
 ```
 [1] pry(#<BestOnlineCodingBootcamps::Bootcamps>)> @@all
@@ -111,7 +114,7 @@ Meaning now we have a new bootcamp with its info (name,rating,subjects,url) save
 ```
 
 To sum up:
-*  we have a basic idea how our CLI class could look and that its responsibility
+*  we have a basic idea how our CLI class could look and what are it's responsibilities
 *  we explained how first level scraping looks and how we create a new Object (bootcamp)
 *  lastly we explained what happens when that new object gets created
 
