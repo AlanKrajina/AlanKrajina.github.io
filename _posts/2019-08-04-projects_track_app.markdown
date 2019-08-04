@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Projects Track App"
-date:       2019-08-04 10:51:28 +0000
+date:       2019-08-04 06:51:29 -0400
 permalink:  projects_track_app
 ---
 
@@ -94,18 +94,11 @@ Important "helper" methods.
   end
 ```
 Validate uniqueness of user login attribute (username or email).
-*  Code that checks input and uses a find_by method to find User and IF they are authenticated via correct password then the user.id is assigned to session[:user_id] and access granted to "/projects"
+*  Code that checks input and compares all created Users and their username & email to input params that were made to create a new User
 
 ```
-  post '/login' do
-    user = User.find_by(:username => params[:username])
-    if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
-      redirect to "/projects"
-    else
-      redirect to '/signup'
-    end
-  end 
+User.all.any?{|user|user.email.downcase == params["email"].downcase||user.username.downcase == params["username"].downcase} 
+
 ```
 
 Once logged in, a user must have the ability to create, read, update and destroy the resource that belongs_to user.
