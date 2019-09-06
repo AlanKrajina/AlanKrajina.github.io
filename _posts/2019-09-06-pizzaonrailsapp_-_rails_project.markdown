@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "PizzaOnRailsApp - Rails project"
-date:       2019-09-06 17:55:02 +0000
+date:       2019-09-06 13:55:02 -0400
 permalink:  pizzaonrailsapp_-_rails_project
 ---
 
@@ -11,9 +11,7 @@ In this blog I will go through project requirements and try to explain the way t
 **1.**
 
 **Include at least one has_many, at least one belongs_to, and at least two has_many :through relationships
-**
-
-**Include a many-to-many relationship implemented with has_many :through associations. The join table must include a user-submittable attribute — that is to say, some attribute other than its foreign keys that can be submitted by the apps user**
+Include a many-to-many relationship implemented with has_many :through associations. The join table must include a user-submittable attribute — that is to say, some attribute other than its foreign keys that can be submitted by the apps user**
 
 Associations are a set of macro-like class methods for tying objects together through foreign keys. Each macro adds a number of methods to the class which are specialized according to the collection or association symbol and the options hash. It works much the same way as Ruby's own attr* methods.
 
@@ -394,7 +392,7 @@ Lastly we add form to create params for controller Views/users/new.html.erb:
 **Your authentication system must also allow login from some other service. Facebook, Twitter, Foursquare, Github, etc...
 **
 
-For this last requirement I won't go into details but will just recommend this blog that phenomenaly explains this step by step.
+For this last requirement I won't go into details but will just recommend this blog that phenomenally explains this step by step.
 
 [https://medium.com/@rachel.hawa/google-authentication-strategy-for-rails-5-application-cd37947d2b1b](http://)
 
