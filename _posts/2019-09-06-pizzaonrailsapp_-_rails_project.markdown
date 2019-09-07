@@ -152,7 +152,8 @@ Here we use class = "fields_with_errors" that has custom attributes saved in app
 .fields_with_errors{
     color:red;
     background-color:rgba(206, 184, 110, 0.6) ;
-    margin-right: 80em;
+    width: 500px;
+    padding-right: 10px;
 }
 
 ```
@@ -166,7 +167,7 @@ The error message is shown in the users/new.html.erb with the use of partial con
  
     <ul>
     <% @user.errors.full_messages.each do |msg| %>
-      <li><em><font color="red"><%= msg %></font><em></li>
+      <li><em><%= msg %><em></li>
     <% end %>
     </ul>
   </div>
@@ -183,6 +184,17 @@ class User < ApplicationRecord
     validates :name,  presence: true
     validates :email, presence: true
 
+```
+
+How the errors look for the user:
+
+```
+4 errors prohibited this user from being created:
+
+    Password can't be blank
+    Name can't be blank
+    Email can't be blank
+    Email is invalid
 ```
 
 **3.**
@@ -329,8 +341,8 @@ Users/show.html.erb that represents a NEW nested route:
 **Your application must provide standard user authentication, including signup, login, logout, and passwords.
 **
 
-**To pass this requirement we need to configure all aspects of the App. 
-**
+To pass this requirement we need to configure all aspects of the App. 
+
 
 Here are some signup steps:
 
