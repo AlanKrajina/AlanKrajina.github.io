@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Flow of fetch in Rails&JS Project to view Index content"
-date:       2019-10-11 14:28:35 +0000
+date:       2019-10-11 10:28:36 -0400
 permalink:  flow_of_fetch_in_rails_and_js_project_to_view_index_content
 ---
 
@@ -154,7 +154,7 @@ Now we create our JS file where we do all of the magic:
 assets/javascripts/lessons.js
 ```
 
-In our .js file firs we make a document ready function:
+In our .js file first we make a document ready function:
 
 ```
 $(() => {
@@ -165,7 +165,7 @@ $(() => {
 
 The ready() method is used to make a function available after the document is loaded. Whatever code you write inside the $(document ).ready() method will run once the page DOM is ready to execute JavaScript code.
 
-Then we define or clickHandler function:
+Then we define our clickHandlers function:
 
 ```
 const clickHandlers = () => {
@@ -186,7 +186,7 @@ Using
 e.preventDefault() 
 ```
 
-we prevent default when that link is clicked (meaning default will render via rails html markup)
+we prevent default when that link is clicked (meaning default will render via rails html markup).
 On the last line we simply call getLessons() when our link is clicked.
 
 For us to call that function we need to declare it:
