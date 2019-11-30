@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "VisualCV Final Project"
-date:       2019-11-30 15:41:53 +0000
+date:       2019-11-30 10:41:54 -0500
 permalink:  visualcv_final_project
 ---
 
 
-My final Flatiron project. What can I say except that I am very proud of being in this position. If somebody asked me one year ago what coding is and how it works I would start laughing. For that kind of question I would never have an answer, that was for smart kids, I play video games not code. But after random sequences of events while I was working for Apple in Ireland I started playing around with code. To cut the story (more on my path to greatness on another blog :D) one year later I am developing single page application using Rails backend and React/Redux frontend. And I did it all by myself. For this reason I will explain how all requirements are meet in this project. This project is just one in many to come, there is still a lot to learn and since looking at the screen for 5+ hours a day is fun for me, I look forward to my future in software development. And to finish this intro with my all-time favorite quote: 
+My final Flatiron project. What can I say except that I am very proud for being in this position. If somebody asked me one year ago what coding is and how it works I would start laughing. For that kind of question I would never have an answer, that was for smart kids, I play video games not code. But after random sequences of events while I was working for Apple in Ireland I started playing around with code. To cut the story (more on my path to greatness on another blog :D) one year later I am developing single page application using Rails backend and React/Redux frontend. And I did it all by myself. For this reason I will explain how all requirements are meet in this project. This project is just one in many to come, there is still a lot to learn and since looking at the screen for 5+ hours a day is fun for me, I look forward to my future in software development. And to finish this intro with my all-time favorite quote: 
 > 
 “Things are only impossible until they are not.” ― Jean-Luc Picard
 > 
