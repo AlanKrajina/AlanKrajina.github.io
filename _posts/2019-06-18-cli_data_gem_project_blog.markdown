@@ -120,7 +120,6 @@ To sum up:
 
 There are a lot more things in this project that I could cover like scraping the second level, logic for the CLI Class but I wanted to cover the basics and give an idea how to start by knowing the simple requirements that we need to pass in order to get us going. After that who knows what you can accomplish.
 
-*“Things are only impossible until they are not.” *
-― Jean-Luc Picard
+
 
 
