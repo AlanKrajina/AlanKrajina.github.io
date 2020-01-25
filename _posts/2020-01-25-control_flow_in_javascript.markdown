@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Control Flow in JavaScript"
-date:       2020-01-25 12:18:45 +0000
+date:       2020-01-25 07:18:45 -0500
 permalink:  control_flow_in_javascript
 ---
 
